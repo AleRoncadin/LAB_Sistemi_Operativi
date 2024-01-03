@@ -1,0 +1,5 @@
+
+
+ARGOMENTI DA RIGA DI COMANDO
+int main(int argc, char **argv);
+char **argv è come scrivere: char *argv[];
