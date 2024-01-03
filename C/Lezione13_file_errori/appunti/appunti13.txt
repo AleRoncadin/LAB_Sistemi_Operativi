@@ -1,0 +1,25 @@
+Se da fgetc ottengo -1 può essere un errore o EOF. 
+Per capire se è EOF si usa feof.
+
+In caso di file binari si usano "rb" e "wb" per
+leggere o scrivere byte
+
+La funzione fread in C legge dati da un file in memoria 
+puntato da FILE *file e li memorizza nell'area di memoria
+puntata da ptr.
+
+Ecco cosa fanno i parametri:
+
+- ptr: Puntatore all'area di memoria in cui verranno 
+    memorizzati i dati letti.
+- size: Dimensione in byte di ciascun elemento da leggere.
+- nitems: Numero di elementi, ciascuno della dimensione size, 
+    che si desidera leggere.
+- file: Puntatore al file da cui leggere i dati.
+
+La funzione restituisce il numero di elementi letti con successo. 
+Il numero di elementi letti può essere inferiore a nitems se il
+file termina prima della 
+lettura di tutti gli elementi richiesti.
+
+stat permette di accedere ai metadati del file
