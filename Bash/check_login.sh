@@ -18,7 +18,13 @@
 # campo, mentre il terzo campo è lo user ID. Ad esempio:
 # pippo:x:1017:1019:Pippo,,,:/home/pippo:/bin/bash
 
-n = $ #
+if test $# -lt 1
+then
+    echo "Usage: $0 nome1 nome2 nome3"
+    exit 1
+fi
+
+n=$#
 for (( i=1; i<=$n; i++))
 do
     if grep "^$1:" /etc/passwd 2>/dev/null >/dev/null
@@ -26,7 +32,7 @@ do
         id=`cat /etc/passwd | grep "^$1:" 2>/dev/null | cut -d: -f3`
         echo $1 ha id $id
     else
-        echo "$1 non e’ un nome di login valido "
+        echo "$1 non è un nome di login valido "
     fi
     shift
 done
