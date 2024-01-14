@@ -14,7 +14,7 @@
 # *
 # ******
 
-if ! test $# -eq 0
+if [ $# -eq 0 ]
 then
     echo "Usage: $0 numbers... -1"
     exit 1
@@ -22,16 +22,16 @@ fi
 
 n=$1    # n è il primo argomento
 
-while ! test $n -eq -1      # ripeti il ciclo finché l'argomento è -1
+while [ ! $n -eq "-1" ]      # ripeti il ciclo finché l'argomento è -1
 do
     i=0
-    while test $i -lt $n
+    while [ $i -lt $n ]
     do
         echo -n '*'     # -n per non andare a capo
         i=$[ $i+1 ]
     done
 
-    echo
+    echo # va a capo
     shift # Sposta tutti gli argomenti in avanti ($2 diventa $1, $3 diventa $2...)
     n=$1
 done
