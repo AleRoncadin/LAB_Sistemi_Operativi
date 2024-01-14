@@ -10,7 +10,7 @@
 # Dimensione di indice . txt : 7 byte
 # *******
 
-if test $ # - ne 1
+if test $# -ne 1
 then
     echo "Utilizzo: $0 <file>"
     exit 1
@@ -18,7 +18,7 @@ fi
 
 if test -f $1 -a -r $1
 then
-    dim = `wc -c < $1`  # ottengo la dimensione in byte
+    dim=`wc -c < $1`  # ottengo la dimensione in byte
     echo "Dimensione di $1: $dim byte"
 
     i=0;
