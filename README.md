@@ -1,6 +1,6 @@
 # Laboratorio di Sistemi Operativi
 
-Questa repository raccoglie **esercizi svolti a lezione** e **compiti d’esame con soluzioni** per la preparazione alla prova di laboratorio di Sistemi Operativi. La repository è pensata come supporto per vedere esempi pratici in Bash e C applicati alla programmazione di sistema.
+Questa repository raccoglie **esercizi svolti a lezione** e **compiti d’esame con soluzioni** usata in preparazione alla prova di laboratorio di Sistemi Operativi. La repository è anche pensata come supporto per vedere esempi pratici in Bash e C applicati alla programmazione di sistema.
 
 ## Contenuti
 
